@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="grey lighten-5">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <style>
+        p{
+            font-size:26px;
+            font-family: 'Markazi Text', serif;
+        }
+        span{
+            display:inline-block;
+            width:10px;
+        }
+        footer{
+            display:block;
+            height:5px;
+            width:100vw;
+            position:fixed;
+            top:0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="grey-text text-darken-2">Youtube Annotation Hider</h2>
+        <br>
+        <p class="grey-text text-darken-3">This magical button hides all types of annotations which gets in your viewing experience. Just drag and drop these two beautiful buttons to your bookmark bar and you're all set.</p>
+        <br>
+        <div>
+            <a href='javascript: (function () { var endanno = document.querySelectorAll(".ytp-ce-element"); for (loopi = 0; loopi < endanno.length; loopi++) { endanno[loopi].style.display = "none"; } var reganno = document.querySelectorAll(".annotation"); for (loopi = 0; loopi < reganno.length; loopi++) { reganno[loopi].style.display = "none"; } document.querySelector(".ytp-cards-teaser").style.opacity = "0"; document.querySelector(".ytp-cards-button-icon-default").style.display = "none"; })()' class="btn btn-large indigo lighten-1">Hide</a>
+            <span></span>
+            <a href='javascript: (function () { var endanno = document.querySelectorAll(".ytp-ce-element"); for (loopi = 0; loopi < endanno.length; loopi++) { endanno[loopi].style.display = "block"; } var reganno = document.querySelectorAll(".annotation"); for (loopi = 0; loopi < reganno.length; loopi++) { reganno[loopi].style.display = "block"; } document.querySelector(".ytp-cards-teaser").style.opacity = "1"; document.querySelector(".ytp-cards-button-icon-default").style.display = "block"; })()' class="btn btn-large indigo lighten-1">Show</a>
+        </div>
+    </div>
+    <footer class="indigo lighten-1"></footer>
+</body>
+
+</html>
